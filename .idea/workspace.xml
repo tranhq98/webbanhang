@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed16d50c-4839-4ba6-addf-adc54eb188f5" name="Default Changelist" comment="" />
+    <list default="true" id="ed16d50c-4839-4ba6-addf-adc54eb188f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/giohang.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/themvaogiohang.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/source/assets/dest/js/custom2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/source/assets/dest/js/custom2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/source/assets/dest/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/source/assets/dest/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/source/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/trangchu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/trangchu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +38,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -110,6 +141,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kjMlsYziNgfdWSJnvVW9JxMJHa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -118,7 +150,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/source/assets/dest/images/icons/credit-cards" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cart" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -128,13 +160,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\project\webbanhang\public\source\assets\dest\images\icons\credit-cards" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\webbanhang\app\Http\Controllers" />
+      <recent name="E:\project\webbanhang\resources\views\pages" />
       <recent name="E:\project\webbanhang\public\source\image\slide" />
       <recent name="E:\project\webbanhang\public\source\assets\dest\images\products" />
       <recent name="E:\project\webbanhang\public\source\assets\dest\images\thumbs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\webbanhang\app" />
+      <recent name="E:\project\webbanhang\public\source\assets\dest\images\icons\credit-cards" />
     </key>
   </component>
   <component name="RunManager">
@@ -155,32 +190,43 @@
       <updated>1606209701690</updated>
       <workItem from="1606209703776" duration="4167000" />
       <workItem from="1606272493341" duration="801000" />
-      <workItem from="1606274332367" duration="18005000" />
+      <workItem from="1606274332367" duration="18198000" />
+      <workItem from="1606355185083" duration="20395000" />
+      <workItem from="1606382601754" duration="4422000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="1205" y="271" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606383306223">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1205" y="271" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606383306223" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606290130233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606290130233" />
-    <state x="351" y="275" key="FileChooserDialogImpl" timestamp="1606274329258">
+    <state x="874" y="327" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606385108346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="351" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606274329258" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/pages/trangchu.blade.php</url>
-          <line>3</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="874" y="327" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606385108346" />
+    <state x="351" y="275" key="FileChooserDialogImpl" timestamp="1606379059287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="351" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606379059287" />
   </component>
 </project>

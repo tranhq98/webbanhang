@@ -3,8 +3,8 @@
         <div class="container">
             <div class="pull-left auto-width-left">
                 <ul class="top-menu menu-beta l-inline">
-                    <li><a href=""><i class="fa fa-home"></i> 90-92 Lê Thị Riêng, Bến Thành, Quận 1</a></li>
-                    <li><a href=""><i class="fa fa-phone"></i> 0163 296 7751</a></li>
+                    <li><a href=""><i class="fa fa-home"></i> Hoang Quoc Tran 1008 </a></li>
+                    <li><a href=""><i class="fa fa-phone"></i> 0123456789</a></li>
                 </ul>
             </div>
             <div class="pull-right auto-width-right">
@@ -33,43 +33,22 @@
 
                 <div class="beta-comp">
                     <div class="cart">
-                        <div class="beta-select"><i class="fa fa-shopping-cart"></i> Giỏ hàng (Trống) <i class="fa fa-chevron-down"></i></div>
+                        <div class="beta-select"><i class="fa fa-shopping-cart"></i> Giỏ hàng @if(Session::has('cart')){{Session('cart')->totalQty}} @else Trống @endif <i class="fa fa-chevron-down"></i></div>
+                        @if(Session::has('cart'))
                         <div class="beta-dropdown cart-body">
-                            <div class="cart-item">
-                                <div class="media">
-                                    <a class="pull-left" href="#"><img src="source/assets/dest/images/products/cart/1.png" alt=""></a>
-                                    <div class="media-body">
-                                        <span class="cart-item-title">Sample Woman Top</span>
-                                        <span class="cart-item-options">Size: XS; Colar: Navy</span>
-                                        <span class="cart-item-amount">1*<span>$49.50</span></span>
+                                @foreach($product_cart as $product)
+                                <div class="cart-item">
+                                    <div class="media">
+                                        <a class="pull-left" href="#"><img src="source/image/product/{{$product['item']['image']}}" alt=""></a>
+                                        <div class="media-body">
+                                            <span class="cart-item-title">{{$product['item']['name']}}</span>
+                                            <span class="cart-item-amount">Số Lượng: {{$product['qty']}} - Thành Tiền: <span>{{$product['item']['unit_price']}}</span></span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="cart-item">
-                                <div class="media">
-                                    <a class="pull-left" href="#"><img src="source/assets/dest/images/products/cart/2.png" alt=""></a>
-                                    <div class="media-body">
-                                        <span class="cart-item-title">Sample Woman Top</span>
-                                        <span class="cart-item-options">Size: XS; Colar: Navy</span>
-                                        <span class="cart-item-amount">1*<span>$49.50</span></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="cart-item">
-                                <div class="media">
-                                    <a class="pull-left" href="#"><img src="source/assets/dest/images/products/cart/3.png" alt=""></a>
-                                    <div class="media-body">
-                                        <span class="cart-item-title">Sample Woman Top</span>
-                                        <span class="cart-item-options">Size: XS; Colar: Navy</span>
-                                        <span class="cart-item-amount">1*<span>$49.50</span></span>
-                                    </div>
-                                </div>
-                            </div>
-
+                                @endforeach
                             <div class="cart-caption">
-                                <div class="cart-total text-right">Tổng tiền: <span class="cart-total-value">$34.55</span></div>
+                                <div class="cart-total text-right">Tổng tiền: <span class="cart-total-value">{{$totalPrice}}</span></div>
                                 <div class="clearfix"></div>
 
                                 <div class="center">
@@ -78,7 +57,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- .cart -->
+                        @endif
+                    </div>
+                       <!-- .cart -->
                 </div>
             </div>
             <div class="clearfix"></div>

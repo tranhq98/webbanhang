@@ -54,7 +54,7 @@
                                         </p>
                                     </div>
                                     <div class="single-item-caption">
-                                        <a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
+                                        <a class="add-to-cart pull-left" href="{{route('themgiohang', $product->id)}}"><i class="fa fa-shopping-cart"></i></a>
                                         <a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
@@ -62,7 +62,7 @@
                             </div>
                         @endforeach
                         </div>
-                        <div class="row">{{$new_product->links()}}</div>
+                        <div class="row">{!! $new_product->render() !!}</div>
                     </div> <!-- .beta-products-list -->
 
                     <div class="space50">&nbsp;</div>
@@ -86,7 +86,7 @@
                                         </p>
                                     </div>
                                     <div class="single-item-caption">
-                                        <a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
+                                        <a class="add-to-cart pull-left" href="{{route('themgiohang', $product->id)}}"><i class="fa fa-shopping-cart"></i></a>
                                         <a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
@@ -221,8 +221,8 @@
                                         </p>
                                     </div>
                                     <div class="single-item-caption">
-                                        <a class="add-to-cart pull-left" href="shopping_cart.html"><i class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="product.html">Details <i class="fa fa-chevron-right"></i></a>
+                                        <a class="add-to-cart pull-left" href="{{route('themgiohang', $product->id)}}"><i class="fa fa-shopping-cart"></i></a>
+                                        <a class="beta-btn primary" href="trangchu.blade.php">Details <i class="fa fa-chevron-right"></i></a>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
@@ -231,9 +231,27 @@
                     </div> <!-- .beta-products-list -->
                 </div>
             </div> <!-- end section with sidebar and main content -->
-
-
         </div> <!-- .main-content -->
     </div> <!-- #content -->
 </div> <!-- .container -->
 @endsection
+<script>
+    $(document).ready(function(){
+        $(document).on('click', '.pagination a', function(event){
+            event.preventDefault();
+            var page = $(this).attr('href').split('page=')[1];
+            fetch_data(page);
+        });
+        function fetch_data(page)
+        {
+            $.ajax({
+                ulr:"/trangchu/fetch_data?page="+page,
+                success:function(new_product)
+                {
+                    $('.beta-products-list').html(new_product);
+                }
+            })
+        }
+    });
+</script>
+
